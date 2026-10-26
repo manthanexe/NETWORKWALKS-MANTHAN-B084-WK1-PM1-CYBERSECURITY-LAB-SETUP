@@ -41,17 +41,17 @@ This repository details the architecture, manual routing configuration, and oper
 ### 1. Custom Global NAT Subnet Creation
 Created an isolated global `NatNetwork` within VirtualBox operating on the `10.0.0.0/24` IPv4 space with active DHCP services enabled to manage local virtual host allocations.
 
-![VirtualBox NAT Network Configuration](1-nat-network-config.png)
+
 
 ### 2. Network Interface & Promiscuous Configuration
 Bound the primary virtual NIC of the Kali Linux VM (`kali-linux-2026.2-virtualbox-amd64`) directly to `NatNetwork`. Set interface promiscuous mode to **Allow All** to permit raw packet inspection and promiscuous monitoring during future pentesting modules.
 
-![Kali VM Network Adapter Settings](2-vm-adapter-settings.png)
+
 
 ### 3. Workstation Deployment & Performance Inspection
 Initialized the Kali Linux environment, setting up system processes and monitoring interface traffic across virtual sockets.
 
-![Kali Linux Desktop Environment](3-kali-desktop-monitoring.png)
+
 
 ---
 
